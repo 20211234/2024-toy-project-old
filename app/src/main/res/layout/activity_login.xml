@@ -31,7 +31,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/login_naver"
             android:layout_width="343dp"
             android:layout_height="57dp"
@@ -41,7 +41,7 @@
             android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/login_kakao"
             android:layout_width="343dp"
             android:layout_height="57dp"
@@ -51,7 +51,7 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/login_google"
             android:layout_width="343dp"
             android:layout_height="57dp"
@@ -103,7 +103,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/login_phone"
             android:layout_width="343dp"
             android:layout_height="57dp"
