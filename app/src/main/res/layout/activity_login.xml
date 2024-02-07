@@ -6,20 +6,23 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <!-- 닫기 아이콘 및 도움말 아이콘 추가 예정 -->
+
     <View
         android:layout_width="match_parent"
-        android:layout_height="58dp" />
+        android:layout_height="66dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="로그인"
-        android:textSize="28sp" />
+        android:textSize="30sp"
+        android:textStyle="normal" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="45dp" />
+        android:layout_height="51dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,40 +32,43 @@
 
         <Button
             android:id="@+id/login_naver"
-            android:layout_width="300dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/green"
-            android:text="네이버로 로그인"
-            android:textColor="@color/white" />
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/green"
+            android:text="네이버 로그인"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/login_kakao"
-            android:layout_width="300dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/yellow"
-            android:text="카카오톡으로 로그인"
-            android:textColor="@color/black" />
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/yellow"
+            android:text="카카오톡 로그인"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/login_google"
-            android:layout_width="300dp"
-            android:layout_height="55dp"
-            android:backgroundTint="@color/grey_border"
-            android:text="구글로 로그인"
-            android:textColor="@color/black" />
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:background="@drawable/white_button"
+            android:text="구글 로그인"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="24dp" />
+        android:layout_height="27dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:padding="16dp">
 
         <View
@@ -74,9 +80,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="또는"
             android:paddingLeft="8dp"
-            android:paddingRight="8dp" />
+            android:paddingRight="8dp"
+            android:text="또는" />
 
         <View
             android:layout_width="0dp"
@@ -98,17 +104,17 @@
 
         <Button
             android:id="@+id/login_phone"
-            android:layout_width="300dp"
-            android:layout_height="55dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/grey_border"
-            android:text="휴대폰 번호로 로그인"
-            android:textColor="@color/black" />
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:background="@drawable/white_button"
+            android:text="휴대폰 번호 로그인"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="180dp" />
+        android:layout_height="140dp" />
 
     <TextView
         android:id="@+id/login_signup"
@@ -116,9 +122,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="밴드가 처음이신가요? 회원가입" />
-
-
-
 
 
 </LinearLayout>
