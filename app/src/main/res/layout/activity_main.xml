@@ -6,23 +6,25 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- 밴드 로고 이미지 교체 예정 -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="78dp"
         android:scaleType="centerInside"
         android:src="@drawable/main_logo" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="24dp" />
+        android:layout_height="27dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="밴드는 나와 연결된 모임을 더욱 끈끈하게\n만들어 주는 글로벌 no.1 모임앱 입니다." />
+        android:text="밴드는 나와 연결된 모임을 더욱 끈끈하게\n만들어 주는 글로벌 no.1 모임앱 입니다."
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,21 +34,23 @@
 
         <Button
             android:id="@+id/main_login"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_width="343dp"
+            android:layout_height="57dp"
             android:backgroundTint="@color/lightgreen"
             android:includeFontPadding="false"
             android:text="로그인"
-            android:textColor="@color/green" />
+            android:textColor="@color/green"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/main_signup"
-            android:layout_width="300dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginBottom="47dp"
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="54dp"
             android:backgroundTint="@color/green"
-            android:text="회원가입" />
+            android:text="회원가입"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
