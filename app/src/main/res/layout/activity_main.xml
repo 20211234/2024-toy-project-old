@@ -6,15 +6,14 @@
     android:background="@color/grey_background"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <!-- 밴드 로고 이미지 교체 예정 -->
+    
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="61dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="78dp"
         android:scaleType="centerInside"
-        android:src="@drawable/main_logo" />
+        android:src="@drawable/main_band" />
 
     <View
         android:layout_width="match_parent"
