@@ -6,7 +6,7 @@
     android:background="@color/grey_background"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="밴드는 나와 연결된 모임을 더욱 끈끈하게\n만들어 주는 글로벌 no.1 모임앱 입니다."
+        android:textAlignment="center"
         android:textSize="16sp" />
 
     <LinearLayout
