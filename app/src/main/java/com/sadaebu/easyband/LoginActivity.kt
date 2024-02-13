@@ -7,12 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.SpannableStringBuilder
 import android.text.Spanned
+import android.text.TextPaint
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.text.style.StyleSpan
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +47,11 @@ class LoginActivity : AppCompatActivity() {
             override fun onClick(widget: View) {
                 val intent = Intent(this@LoginActivity, SignUpActivity::class.java)
                 startActivity(intent)
+            }
+            override fun updateDrawState(text: TextPaint) {
+                super.updateDrawState(text)
+                text.isUnderlineText = false
+                text.color = ContextCompat.getColor(this@LoginActivity, R.color.black)
             }
         }
 
