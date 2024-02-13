@@ -26,16 +26,20 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // 도움말 페이지로 이동
+        // 도움말 화면으로 이동
         val goHelpCenter: ImageView = findViewById(R.id.login_help)
         goHelpCenter.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://band.us/cs/help"))
             startActivity(intent)
         }
 
-        // 회원가입 페이지로 이동
+        // 회원가입 화면으로 이동
         val signUpText: TextView = findViewById(R.id.login_signup)
-        val spannableString = SpannableStringBuilder("밴드가 처음이신가요? 회원가입")
+        val str = "밴드가 처음이신가요? 회원가입"
+        val spannableString = SpannableStringBuilder(str)
+        val start = str.indexOf("회원가입")
+        val end = start + "회원가입".length
+
         val boldSpan = StyleSpan(Typeface.BOLD)
         val clickableSpan: ClickableSpan = object : ClickableSpan() {
             override fun onClick(widget: View) {
@@ -44,8 +48,8 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        spannableString.setSpan(boldSpan, 14, 18, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-        spannableString.setSpan(clickableSpan, 14, 18, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        spannableString.setSpan(boldSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        spannableString.setSpan(clickableSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         signUpText.text = spannableString
         signUpText.movementMethod = LinkMovementMethod.getInstance()
