@@ -7,17 +7,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- original -->
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="27dp"
+        android:src="@drawable/main_logo" />
+
+    <!-- resized -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="78dp"
-        android:scaleType="centerInside"
+        android:layout_marginBottom="27dp"
         android:src="@drawable/main_band" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="27dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +43,6 @@
             android:layout_width="343dp"
             android:layout_height="57dp"
             android:backgroundTint="@color/lightgreen"
-            android:includeFontPadding="false"
             android:text="로그인"
             android:textColor="@color/green"
             android:textSize="16sp" />
