@@ -9,20 +9,21 @@
 
     <!-- original -->
     <ImageView
-        android:layout_width="182dp"
-        android:layout_height="63dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="78dp"
         android:layout_marginBottom="27dp"
         android:src="@drawable/main_logo" />
 
-    <!-- resized -->
+    <!-- original -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="78dp"
         android:layout_marginBottom="27dp"
-        android:src="@drawable/main_band" />
+        android:src="@drawable/photo-camera-interface-symbol-for-button" />
 
     <TextView
         android:layout_width="wrap_content"
