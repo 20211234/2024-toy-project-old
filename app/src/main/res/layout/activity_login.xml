@@ -5,7 +5,6 @@
     android:layout_height="wrap_content"
     android:background="@color/grey_background"
     android:orientation="vertical"
-    android:paddingTop="17dp"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -19,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:scaleType="centerInside"
+            android:padding="30dp"
             android:src="@drawable/all_close" />
 
         <View
