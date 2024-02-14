@@ -157,5 +157,4 @@
         android:layout_gravity="center_horizontal"
         android:text="밴드가 처음이신가요? 회원가입" />
 
-
 </LinearLayout>

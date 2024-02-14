@@ -5,10 +5,8 @@
     android:layout_height="wrap_content"
     android:background="@color/grey_background"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
 
-    <!-- 닫기 및 다음 아이콘 추가 예정 -->
-    <!-- 로그인 페이지 제목과 상단 여백값 다른 점 확인 필요 -->
     <View
         android:layout_width="match_parent"
         android:layout_height="66dp" />
@@ -91,8 +89,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="100dp" />
-
-
+        
     </LinearLayout>
 
     <View
@@ -119,6 +116,5 @@
             android:textColor="@color/white"
             android:textSize="18sp" />
     </LinearLayout>
-
 
 </LinearLayout>

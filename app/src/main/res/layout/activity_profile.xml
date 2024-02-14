@@ -6,7 +6,7 @@
     android:background="@color/grey_background"
     android:orientation="vertical"
     android:paddingTop="17dp"
-    tools:context=".LoginActivity">
+    tools:context=".ProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         android:layout_height="46dp" />
 
     <ImageView
-        android:id="@+id/profile_default"
+        android:id="@+id/profile_choosepicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
