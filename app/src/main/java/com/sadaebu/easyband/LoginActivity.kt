@@ -12,8 +12,10 @@ import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.text.style.StyleSpan
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.widget.ButtonBarLayout
 import androidx.core.content.ContextCompat
 
 class LoginActivity : AppCompatActivity() {
@@ -29,9 +31,22 @@ class LoginActivity : AppCompatActivity() {
         }
 
         // 도움말 화면으로 이동
-        val goHelpCenter: ImageView = findViewById(R.id.login_help)
+        val goHelpCenter = findViewById<ImageView>(R.id.login_help)
         goHelpCenter.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://band.us/cs/help"))
+            startActivity(intent)
+        }
+
+        // (추가 예정) 네이버 로그인 화면으로 이동
+
+        // (추가 예정) 카카오톡 로그인 화면으로 이동
+
+        // (추가 예정) 구글 로그인 화면으로 이동
+
+        // 휴대폰 로그인 화면으로 이동
+        val goPhoneLogin = findViewById<Button>(R.id.login_phone)
+        goPhoneLogin.setOnClickListener {
+            val intent = Intent(this@LoginActivity, PhoneLoginActivity::class.java)
             startActivity(intent)
         }
 
